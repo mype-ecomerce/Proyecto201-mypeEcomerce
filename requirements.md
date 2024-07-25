@@ -13,6 +13,7 @@ Este proyecto resuelve el problema de bajas ventas y dificultades para alcanzar 
 ## Importancia del Proyecto
 
 Este proyecto es crucial por varias razones:
+
 1. Accesibilidad 24/7: Permite a los clientes comprar en cualquier momento, lo que maximiza las oportunidades de ventas y mejora la experiencia del cliente.
 2. Reducción de Costos: Al eliminar los gastos de personal, alquiler y mantenimiento de inventario, el negocio puede operar de manera más eficiente y rentable.
 3. Expansión del Mercado: Abre la posibilidad de llegar a una audiencia más amplia y diversa, incluyendo clientes que prefieren comprar en línea.
