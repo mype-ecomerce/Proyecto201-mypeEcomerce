@@ -1,0 +1,14 @@
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: lightcoral;
+}
+.footer-section{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(243, 242, 242);
+}
+footer>p{
+    display: flex;
+    justify-content: space-around;
+}
