@@ -1,0 +1,14 @@
+.presentacion{
+    display: flex;
+    justify-content: space-around;
+}
+.presentacion>div{
+    max-width: 50%;
+}
+.coleccion{
+    display: flex;
+    justify-content: space-around;
+}
+.coleccion>div{
+    max-width: 50%;
+}
