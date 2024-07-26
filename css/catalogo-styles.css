@@ -1,0 +1,17 @@
+.header-section {
+  margin: 5px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav > a {
+  padding: 15px;
+  gap: 15px;
+}
+
+main {
+  background-color: #d7eeeb;
+}
