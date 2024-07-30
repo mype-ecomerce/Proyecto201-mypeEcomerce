@@ -1,14 +1,38 @@
-.presentacion{
-    display: flex;
-    justify-content: space-around;
+.presentacion {
+  display: flex;
+  justify-content: space-around;
 }
-.presentacion>div{
-    max-width: 50%;
+.presentacion > div {
+  max-width: 50%;
 }
-.coleccion{
-    display: flex;
-    justify-content: space-around;
+.coleccion {
+  display: flex;
+  justify-content: space-around;
 }
-.coleccion>div{
-    max-width: 50%;
+.coleccion > div {
+  max-width: 50%;
+}
+
+.header-section {
+  margin: 5px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav > a {
+  padding: 15px;
+  gap: 15px;
+}
+
+main {
+  background-color: #d7eeeb;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 30px;
+  margin: 20px;
 }
