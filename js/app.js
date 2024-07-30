@@ -28,6 +28,7 @@ class Products {
         const fill = document.getElementById('main');
         const div = document.createElement('div');
         div.className = 'products';
+        
 
         const imgElement = document.createElement('img');
         imgElement.src = this.route;

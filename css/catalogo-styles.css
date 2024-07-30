@@ -14,4 +14,15 @@ nav > a {
 
 main {
   background-color: #d7eeeb;
+  
 }
+
+#main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ }
+#main img {
+  width: 300px;
+  height: 300px;
+ }
+
