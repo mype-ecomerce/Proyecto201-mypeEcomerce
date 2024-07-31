@@ -20,7 +20,22 @@ main {
 #main {
   display: grid;
   grid-template-columns: 1fr 1fr;
- }
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+#main > div {
+  text-align: center;
+}
+
+#main > div > p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 #main img {
   width: 300px;
   height: 300px;
