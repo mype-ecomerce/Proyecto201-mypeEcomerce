@@ -1,0 +1,38 @@
+h1 {
+  font-family: Helvetica, sans-serif;
+  font: bold;
+  font-size: 40px;
+  margin: 30px;
+  text-align: center;
+}
+
+.compra {
+  border: 1px solid black;
+}
+
+.cabecera {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+  align-items: end;
+  text-align: center;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+  border: 3px solid black;
+  border-radius: 20px;
+}
+
+#carrito img {
+  width: 300px;
+  height: 300px;
+}
+
+
