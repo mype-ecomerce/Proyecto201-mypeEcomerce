@@ -1,6 +1,6 @@
 'use strict'
 
-const img=[`abrigo`,`casacaNegra`,`casacaRoja`,`chalinas`,`chaqueta`,`cuero`,`motociclista`,`pelusa`,`sacoLargo`]
+const img=[`casacaAdidas`,`casacaAdidasBlanca`,`chalinaCuadros`,`chalinaCuadros`,`chalinaMarron`,`chaquetaPloma`,`chompaEstrella`,`chompaRayas`,`poleraNegra`,`sacoBotones`]
 const state = {
     totalProducts: [],
 };
@@ -56,7 +56,7 @@ class Products {
 }
 function objMaker() {
         for (let i = 0; i < img.length; i++) {
-            let product = new Products(img[i], `../img/img_${img[i]}.png`);
+            let product = new Products(img[i], `../img/${img[i]}.png`);
             state.totalProducts.push(product);
         }
 }
