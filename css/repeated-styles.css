@@ -3,6 +3,10 @@ header{
     justify-content: space-around;
     background-color: lightcoral;
 }
+body {
+    font-family: Helvetica, sans-serif;
+}
+
 .footer-section{
     display: flex;
     justify-content: space-around;
