@@ -8,14 +8,14 @@ class Products {
     constructor(name, route) {
         this.name = name;
         this.route = route;
-        this.price = `S/200`;
+        this.price = Number(200);
     }
     addToLocalStorage() {
         let storedProducts = JSON.parse(localStorage.getItem('products')) || [];
         storedProducts.push({
             name: this.name,
             route: this.route,
-            price: this.price
+            price: this.price,
         });
         localStorage.setItem('products', JSON.stringify(storedProducts));
     }
@@ -39,7 +39,7 @@ class Products {
         nameText.textContent = this.capitalizeAndSpace(this.name);
 
         const priceText = document.createElement('p');
-        priceText.textContent = this.price;
+        priceText.textContent = `S/${this.price}`;
 
         const button = document.createElement('button');
         button.textContent = 'Buy Now';
