@@ -19,7 +19,7 @@ class Products {
 
     renderBoughtProducts() {
         const fill = document.getElementById('carrito');
-        fill.innerHTML = ''; // Clear previous content
+        fill.innerHTML = ''; 
 
         if (state.totalProducts.length !== 0) {
             for (let i = 0; i < state.totalProducts.length; i++) {
@@ -41,7 +41,7 @@ class Products {
                 buttonElement.textContent = 'Remove';
                 buttonElement.onclick = () => {
                     this.removeProduct(product);
-                    this.renderBoughtProducts(); // Re-render the list after removal
+                    this.renderBoughtProducts(); 
                 };
 
                 productDiv.appendChild(nameElement);

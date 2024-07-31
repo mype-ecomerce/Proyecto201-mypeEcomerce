@@ -1,6 +1,6 @@
 'use strict'
 
-const img=[`casacaAdidas`,`casacaAdidasBlanca`,`chalinaCuadros`,`chalinaCuadros`,`chalinaMarron`,`chaquetaPloma`,`chompaEstrella`,`chompaRayas`,`poleraNegra`,`sacoBotones`]
+const img=[`casacaAdidas`,`casacaAdidasBlanca`,`chalinaCuadros`,`chalinaMarron`,`chaquetaPloma`,`chompaEstrella`,`chompaRayas`,`poleraNegra`,`sacoBotones`]
 const state = {
     totalProducts: [],
 };
