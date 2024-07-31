@@ -66,5 +66,3 @@ function renderAllProducts() {
 }
 objMaker()
 renderAllProducts() 
-
-
