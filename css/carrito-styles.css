@@ -19,7 +19,6 @@ h1 {
   align-items: end;
   text-align: center;
 }
-
 .productos {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -28,11 +27,37 @@ h1 {
   gap: 20px;
   border: 3px solid black;
   border-radius: 20px;
+  position: absolute;
+  top: 0;
 }
-
+.product{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+.separator{
+  align-self: center;
+}
+.caja-main{
+  position: relative; 
+  height: 100%; 
+}
 #carrito img {
   width: 300px;
   height: 300px;
 }
-
+.empty{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+nav{
+  padding: 20px 0 20px 0;
+}
+nav>a{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#couponForm {
+  display: none;
+}
 
