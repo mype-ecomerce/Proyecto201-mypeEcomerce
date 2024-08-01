@@ -1,69 +1,78 @@
-'use strict'
+"use strict";
 
-const img=[`casacaAdidas`,`casacaAdidasBlanca`,`chalinaCuadros`,`chalinaMarron`,`chaquetaPloma`,`chompaEstrella`,`chompaRayas`,`poleraNegra`,`sacoBotones`]
+const img = [
+  `casacaAdidas`,
+  `casacaAdidasBlanca`,
+  `chalinaCuadros`,
+  `chalinaMarron`,
+  `chaquetaPloma`,
+  `chompaEstrella`,
+  `chompaRayas`,
+  `poleraNegra`,
+  `sacoBotones`,
+];
 const state = {
-    totalProducts: [],
+  totalProducts: [],
 };
 class Products {
-    constructor(name, route) {
-        this.name = name;
-        this.route = route;
-        this.price = Number(200);
-    }
-    addToLocalStorage() {
-        let storedProducts = JSON.parse(localStorage.getItem('products')) || [];
-        storedProducts.push({
-            name: this.name,
-            route: this.route,
-            price: this.price,
-        });
-        localStorage.setItem('products', JSON.stringify(storedProducts));
-    }
-    capitalizeAndSpace(str) {
-        return str
-            .replace(/([A-Z])/g, ' $1') 
-            .replace(/^./, (match) => match.toUpperCase()); 
-    }
-    renderImg() {
-        const fill = document.getElementById('main');
-        const div = document.createElement('div');
-        div.className = 'products';
-        
+  constructor(name, route) {
+    this.name = name;
+    this.route = route;
+    this.price = Number(200);
+  }
+  addToLocalStorage() {
+    let storedProducts = JSON.parse(localStorage.getItem("products")) || [];
+    storedProducts.push({
+      name: this.name,
+      route: this.route,
+      price: this.price,
+    });
+    localStorage.setItem("products", JSON.stringify(storedProducts));
+  }
+  capitalizeAndSpace(str) {
+    return str
+      .replace(/([A-Z])/g, " $1")
+      .replace(/^./, (match) => match.toUpperCase());
+  }
+  renderImg() {
+    const fill = document.getElementById("main");
+    const div = document.createElement("div");
+    div.className = "products";
 
-        const imgElement = document.createElement('img');
-        imgElement.src = this.route;
-        imgElement.alt = this.name;
-        imgElement.style.maxWidth = '30%';
+    const imgElement = document.createElement("img");
+    imgElement.src = this.route;
+    imgElement.alt = this.name;
+    imgElement.style.maxWidth = "50%";
 
-        const nameText = document.createElement('p');
-        nameText.textContent = this.capitalizeAndSpace(this.name);
+    const nameText = document.createElement("p");
+    nameText.textContent = this.capitalizeAndSpace(this.name);
 
-        const priceText = document.createElement('p');
-        priceText.textContent = `S/${this.price}`;
+    const priceText = document.createElement("p");
+    priceText.textContent = `S/${this.price}`;
 
-        const button = document.createElement('button');
-        button.textContent = 'Buy Now';
-        button.addEventListener('click', () => {
-            this.addToLocalStorage();
-        });
+    const button = document.createElement("button");
+    button.textContent = "Buy Now";
+    button.addEventListener("click", () => {
+      this.addToLocalStorage();
+    });
 
-        div.appendChild(imgElement);
-        div.appendChild(nameText);
-        div.appendChild(priceText);
-        div.appendChild(button);
-        fill.appendChild(div);
-    }
+    div.appendChild(imgElement);
+    div.appendChild(nameText);
+    div.appendChild(priceText);
+    div.appendChild(button);
+    fill.appendChild(div);
+  }
 }
 function objMaker() {
-        for (let i = 0; i < img.length; i++) {
-            let product = new Products(img[i], `../img/${img[i]}.png`);
-            state.totalProducts.push(product);
-        }
+  for (let i = 0; i < img.length; i++) {
+    let product = new Products(img[i], `../img/${img[i]}.png`);
+    state.totalProducts.push(product);
+  }
 }
 function renderAllProducts() {
-    for (let i = 0; i < state.totalProducts.length; i++) {
-        state.totalProducts[i].renderImg();
-    }
+  for (let i = 0; i < state.totalProducts.length; i++) {
+    state.totalProducts[i].renderImg();
+  }
 }
-objMaker()
-renderAllProducts() 
+objMaker();
+renderAllProducts();
