@@ -1,0 +1,81 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pasarela de pago</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/repeated-styles.css">
+  <link rel="stylesheet" href="../css/pasarela-styles.css">
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="../index.html">Inicio</a>
+      <a href="./catalogo.html">Catalogo</a>
+    </nav>
+  </header>
+  <main>
+
+    <h1>Tu Información</h1>
+
+    <div class="cabecera">
+      <section id="pasarela">
+      </section>
+      <section id="userInfoSection">
+        <form id="userInfoForm">
+            <label for="direccion">Tu Dirección</label>
+            <input type="text" id="direccion">
+            <label for="nombres">Tus Nombres</label>
+            <input type="text" id="nombres" required>
+            <label for="apellidos">Tus Apellidos</label>
+            <input type="text" id="apellidos" required>
+            <label for="idType">Tipo de documento:</label>
+            <select id="idType" name="options">
+              <option value="dni">DNI</option>
+              <option value="pasaporte">Pasaporte</option>
+              <option value="cane">Carné de extranjería</option>
+            </select>
+            <label for="documento">Numero de documento</label>
+            <input type="text" id="documento">
+            <label for="celular">Celular</label>
+            <input type="text" id="celular">
+            <button type="submit">Realizar Pedido</button>
+        </form>
+      </section>
+      <section class="caja-main"> 
+          <div class="contenido">
+            <h3>Total</h3>
+            <p id="total">S/0</p>
+            <button id="cupon">Tienes un cupon?</button>
+                <form id="couponForm">
+                    <label for="couponCode">Tu cupon:</label>
+                    <input type="text" id="couponCode" required>
+                    <button type="submit">Aplicar descuento</button>
+                </form><br>
+          </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <section class="footer-section">
+      <ul>
+        <li>HELP</li>
+        <li><a href="mailto:matiascarrillosanchez17@gmail.com">Customer Service</a></li>
+        <li><a href="mailto:matiascarrillosanchez17@gmail.com">Contacto</a></li>
+      </ul>
+      <ul>
+        <li>FAQ</li>
+        <li>Pregunta</li>
+        <li>Respuesta</li>
+        <li>Pregunta</li>
+        <li>Respuesta</li>
+      </ul>
+    </section>
+    <p>© 2024 MYPE-Ecommerce, All rights reserved</p>
+  </footer>
+  <script src="../js/pasarela.js"></script>
+</body>
+</html>

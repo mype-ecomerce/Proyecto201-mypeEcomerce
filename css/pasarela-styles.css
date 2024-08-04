@@ -1,3 +1,6 @@
+#couponForm {
+    display: none;
+}
 h1 {
   font-family: Helvetica, sans-serif;
   font: bold;
@@ -5,11 +8,9 @@ h1 {
   margin: 30px;
   text-align: center;
 }
-
 .compra {
   border: 1px solid black;
 }
-
 .cabecera {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -20,9 +21,9 @@ h1 {
   text-align: center;
 }
 .productos {
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr 1fr;
-  justify-content: center;
+  justify-content: left;
   padding: 20px;
   gap: 20px;
   border: 3px solid black;
@@ -32,7 +33,7 @@ h1 {
 }
 .product {
   display: flex;
-  justify-content: space-around;
+  justify-content: left;
   margin-bottom: 30px;
 }
 .separator {
@@ -41,12 +42,6 @@ h1 {
 .caja-main {
   position: relative;
   height: 100%;
-}
-#carrito img {
-  width: 300px;
-  height: 300px;
-  border: 3px solid black;
-  border-radius: 20px;
 }
 .empty {
   padding-top: 50px;
@@ -59,4 +54,6 @@ nav > a {
   padding-left: 10px;
   padding-right: 10px;
 }
-
+img{
+  max-width: 50px;
+}
