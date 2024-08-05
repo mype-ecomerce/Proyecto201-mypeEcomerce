@@ -1,3 +1,7 @@
+body {
+  font-size: 15px;
+}
+
 h1 {
   font-family: Helvetica, sans-serif;
   font: bold;
@@ -29,6 +33,7 @@ h1 {
   border-radius: 20px;
   position: absolute;
   top: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .product {
   display: flex;
@@ -45,18 +50,39 @@ h1 {
 #carrito img {
   width: 300px;
   height: 300px;
-  border: 3px solid black;
-  border-radius: 20px;
+  border-image: auto;
 }
 .empty {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 nav {
-  padding: 20px 0 20px 0;
+  padding: 30px 0 30px 0;
 }
 nav > a {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 15px;
+  gap: 15px;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.boton a {
+  text-decoration: none;
 }
 
+button {
+  border-radius: 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-section {
+  background-color: hsl(0, 88%, 51%);
+  color: hsl(0, 0%, 100%);
+  padding: 10px;
+}
+
+.footer-section ul a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
