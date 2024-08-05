@@ -1,18 +1,18 @@
-header{
-    display: flex;
-    justify-content: space-around;
-    background-color: lightcoral;
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: hsl(0, 88%, 51%);
 }
 body {
-    font-family: Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
 }
 
-.footer-section{
-    display: flex;
-    justify-content: space-around;
-    background-color: rgb(243, 242, 242);
+.footer-section {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(243, 242, 242);
 }
-footer>p{
-    display: flex;
-    justify-content: space-around;
+footer > p {
+  display: flex;
+  justify-content: space-around;
 }

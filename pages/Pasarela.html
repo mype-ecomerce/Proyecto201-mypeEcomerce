@@ -25,51 +25,64 @@
       <section id="pasarela">
       </section>
       <section id="userInfoSection">
-        <form id="userInfoForm">
-            <label for="direccion">Tu Dirección</label>
-            <input type="text" id="direccion">
-            <label for="nombres">Tus Nombres</label>
-            <input type="text" id="nombres" required>
-            <label for="apellidos">Tus Apellidos</label>
-            <input type="text" id="apellidos" required>
-            <label for="idType">Tipo de documento:</label>
-            <select id="idType" name="options">
-              <option value="dni">DNI</option>
-              <option value="pasaporte">Pasaporte</option>
-              <option value="cane">Carné de extranjería</option>
-            </select>
-            <label for="documento">Numero de documento</label>
-            <input type="text" id="documento">
-            <label for="celular">Celular</label>
-            <input type="text" id="celular">
+        <div>
+          <form id="userInfoForm">
+            <div>
+              <label for="direccion">Tu Dirección</label>
+              <input type="text" id="direccion">
+            </div>
+            <div>
+              <label for="nombres">Tus Nombres</label>
+              <input type="text" id="nombres" required>
+            </div>
+            <div>
+              <label for="apellidos">Tus Apellidos</label>
+              <input type="text" id="apellidos" required>
+            </div>
+            <div>
+              <label for="idType">Tipo de documento:</label>
+              <select id="idType" name="options">
+                <option value="dni">DNI</option>
+                <option value="pasaporte">Pasaporte</option>
+                <option value="cane">Carné de extranjería</option>
+              </select>
+            </div>
+            <div>
+              <label for="documento">Numero de documento</label>
+              <input type="text" id="documento">
+            </div>
+            <div>
+              <label for="celular">Celular</label>
+              <input type="text" id="celular">
+            </div>
             <button type="submit">Realizar Pedido</button>
-        </form>
+          </form>
+
+        </div>
       </section>
-      <section class="caja-main"> 
-          <div class="contenido">
-            <h3>Total</h3>
-            <p id="total">S/0</p>
-            <button id="cupon">Tienes un cupon?</button>
-                <form id="couponForm">
-                    <label for="couponCode">Tu cupon:</label>
-                    <input type="text" id="couponCode" required>
-                    <button type="submit">Aplicar descuento</button>
-                </form><br>
-          </div>
+      <section class="caja-main">
+        <div class="contenido">
+          <h3>Total</h3>
+          <p id="total">S/0</p>
+          <button id="cupon">Tienes un cupon?</button>
+          <form id="couponForm">
+            <label for="couponCode">Tu cupon:</label>
+            <input type="text" id="couponCode" required>
+            <button type="submit">Aplicar descuento</button>
+          </form><br>
+        </div>
       </section>
     </div>
   </main>
   <footer>
     <section class="footer-section">
       <ul>
-        <li>HELP</li>
+        <li>Ayuda</li>
         <li><a href="mailto:matiascarrillosanchez17@gmail.com">Customer Service</a></li>
         <li><a href="mailto:matiascarrillosanchez17@gmail.com">Contacto</a></li>
       </ul>
       <ul>
         <li>FAQ</li>
-        <li>Pregunta</li>
-        <li>Respuesta</li>
         <li>Pregunta</li>
         <li>Respuesta</li>
       </ul>
@@ -78,4 +91,5 @@
   </footer>
   <script src="../js/pasarela.js"></script>
 </body>
+
 </html>
