@@ -38,15 +38,17 @@ h1 {
 .product {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 30px;
 }
+
 .separator {
   align-self: center;
 }
+
 .caja-main {
   position: relative;
   height: 100%;
 }
+
 #carrito img {
   width: 250px;
   height: 300px;
@@ -67,8 +69,11 @@ nav > a {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 button {
+  border-color: #ffffff;
+  border-width: 1px;
   border-radius: 5px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  background-color: hsl(0, 100%, 54%);
 }
 
 .footer-section {
@@ -81,4 +86,18 @@ button {
   color: hsl(0, 0%, 100%);
   text-decoration: none;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button a {
+  border-color: #ffffff;
+  border-width: 1px;
+  border-radius: 5px;
+  color: white;
+  background-color: hsl(0, 100%, 54%);
+  text-decoration: none;
+}
+
+footer p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 10px;
 }

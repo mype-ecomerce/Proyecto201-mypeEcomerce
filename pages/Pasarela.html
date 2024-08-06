@@ -28,32 +28,44 @@
         <div>
           <form id="userInfoForm">
             <div>
-              <label for="direccion">Tu Dirección</label>
+              <label for="direccion">Tu Dirección: </label>
               <input type="text" id="direccion">
+              <br>
+              <br>
             </div>
             <div>
-              <label for="nombres">Tus Nombres</label>
+              <label for="nombres">Tus Nombres: </label>
               <input type="text" id="nombres" required>
+              <br>
+              <br>
             </div>
             <div>
-              <label for="apellidos">Tus Apellidos</label>
+              <label for="apellidos">Tus Apellidos: </label>
               <input type="text" id="apellidos" required>
+              <br>
+              <br>
             </div>
             <div>
-              <label for="idType">Tipo de documento:</label>
+              <label for="idType">Tipo de documento: </label>
               <select id="idType" name="options">
                 <option value="dni">DNI</option>
                 <option value="pasaporte">Pasaporte</option>
                 <option value="cane">Carné de extranjería</option>
               </select>
+              <br>
+              <br>
             </div>
             <div>
-              <label for="documento">Numero de documento</label>
+              <label for="documento">Numero de documento: </label>
               <input type="text" id="documento">
+              <br>
+              <br>
             </div>
             <div>
-              <label for="celular">Celular</label>
+              <label for="celular">Celular: </label>
               <input type="text" id="celular">
+              <br>
+              <br>
             </div>
             <button type="submit">Realizar Pedido</button>
           </form>
@@ -62,9 +74,11 @@
       </section>
       <section class="caja-main">
         <div class="contenido">
-          <h3>Total</h3>
+          <h3>Total: </h3>
           <p id="total">S/0</p>
-          <button id="cupon">Tienes un cupon?</button>
+          <br>
+          <br>
+          <button id="cupon">¿Tienes un cupón?</button>
           <form id="couponForm">
             <label for="couponCode">Tu cupon:</label>
             <input type="text" id="couponCode" required>
