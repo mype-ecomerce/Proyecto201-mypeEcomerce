@@ -46,7 +46,7 @@ main {
 }
 
 #main > div > p {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -59,7 +59,11 @@ main {
 }
 
 button {
+  border-color: #ffffff;
+  border-width: 1px;
   border-radius: 5px;
+  color: white;
+  background-color: hsl(0, 100%, 54%);
 }
 
 .footer-section {
@@ -72,4 +76,9 @@ button {
   color: hsl(0, 0%, 100%);
   text-decoration: none;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 10px;
 }

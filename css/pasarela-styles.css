@@ -1,5 +1,11 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+}
+
 #couponForm {
-  display: none;
+  display: flex;
+  justify-content: end;
 }
 h1 {
   font-family: Helvetica, sans-serif;
@@ -43,6 +49,23 @@ h1 {
   position: relative;
   height: 100%;
 }
+
+.contenido h3,
+.contenido p {
+  display: inline-block;
+  margin: 0;
+}
+
+.cupon-container {
+  display: inline-block;
+  margin: 0;
+}
+
+#couponForm {
+  display: inline-block;
+  margin: 0;
+}
+
 .empty {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -78,8 +101,25 @@ img {
 
 .cabecera {
   text-align: left;
+  margin-left: 300px;
 }
 #userInfoSection {
   display: flex;
-  justify-content: end;
+  justify-content: center;
+  margin-bottom: 100px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+}
+
+button {
+  border-color: #ffffff;
+  border-width: 1px;
+  border-radius: 5px;
+  color: white;
+  background-color: hsl(0, 100%, 54%);
+}
+
+footer p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 10px;
 }
