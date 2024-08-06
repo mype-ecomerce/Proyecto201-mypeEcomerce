@@ -66,10 +66,6 @@ nav > a {
   color: hsl(0, 0%, 100%);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.boton a {
-  text-decoration: none;
-}
-
 button {
   border-radius: 5px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;

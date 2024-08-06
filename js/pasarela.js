@@ -138,19 +138,18 @@ document.getElementById('userInfoForm').addEventListener('submit', function(even
     const idType = document.getElementById('idType').value;
     const documento = document.getElementById('documento').value;
     const celular = document.getElementById('celular').value;
-
     const formData = `Dirección: ${direccion}\nNombres: ${nombres}\nApellidos: ${apellidos}\nTipo de documento: ${idType}\nNúmero de documento: ${documento}\nCelular: ${celular}`;
-    
     const cartItems = state.totalProducts;
     if (cartItems.length === 0) {
         alert('El carrito está vacío.');
         return;
     }
-    const cartData = cartItems.map(product => `${product.name}: S/${product.price}`).join('\n');
-    const message = `${formData}\n\nProductos:\n${cartData}`;
+    const cartData = cartItems.map(product => `${product.name}`).join('\n');
+    const couponUsed = localStorage.getItem('couponUsed') === 'true' ? 'Sí' : 'No';
+    const couponInfo = `Cupón utilizado: ${couponUsed}`
+    const message = `${formData}\n\nProductos*:\n${cartData}\n\n${couponInfo}`;
     const encodedMessage = encodeURIComponent(message);
-    const phoneNumber = '+51979771933'; // Replace with the desired phone number
+    const phoneNumber = '+51979771933';
     const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
-
     window.open(whatsappLink, '_blank');
 });
