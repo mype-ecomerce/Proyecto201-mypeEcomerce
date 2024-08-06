@@ -104,7 +104,9 @@ class Products {
     }
     
     calculateTotal() {
-        return state.totalProducts.reduce((total, product) => total + product.price, 0);
+        return state.totalProducts.reduce(function(total, product) {
+            return total + product.price;
+        }, 0);
     }
 
     updateTotalPrice() {

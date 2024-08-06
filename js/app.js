@@ -97,10 +97,8 @@ class Products {
 function objMaker() {
   for (let i = 0; i < img.length; i++) {
     const item = img[i];
-    for (let j = 0; j < 1; j++) { // Inner loop is redundant but added as per request
-      const product = new Products(item.name, `../img/${item.name}.png`, item.price);
-      state.totalProducts.push(product);
-    }
+    const product = new Products(item.name, `../img/${item.name}.png`, item.price);
+    state.totalProducts.push(product);
   }
 }
 function renderAllProducts() {
