@@ -104,7 +104,9 @@ class Products {
     }
     
     calculateTotal() {
-        return state.totalProducts.reduce((total, product) => total + product.price, 0);
+        return state.totalProducts.reduce(function(total, product) {
+            return total + product.price;
+        }, 0);
     }
 
     updateTotalPrice() {
@@ -128,4 +130,28 @@ function renderStoredProducts() {
     productInstance.renderBoughtProducts();
 }
 
-renderStoredProducts();
+renderStoredProducts()
+document.getElementById('userInfoForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const direccion = document.getElementById('direccion').value;
+    const nombres = document.getElementById('nombres').value;
+    const apellidos = document.getElementById('apellidos').value;
+    const idType = document.getElementById('idType').value;
+    const documento = document.getElementById('documento').value;
+    const celular = document.getElementById('celular').value;
+    const formData = `Dirección: ${direccion}\nNombres: ${nombres}\nApellidos: ${apellidos}\nTipo de documento: ${idType}\nNúmero de documento: ${documento}\nCelular: ${celular}`;
+    const cartItems = state.totalProducts;
+    if (cartItems.length === 0) {
+        alert('El carrito está vacío.');
+        return;
+    }
+    const cartData = cartItems.map(product => `${product.name}`).join('\n');
+    const couponUsed = localStorage.getItem('couponUsed') === 'true' ? 'Sí' : 'No';
+    const couponInfo = `Cupón utilizado: ${couponUsed}`
+    const message = `${formData}\n\nProductos*:\n${cartData}\n\n${couponInfo}`;
+    const encodedMessage = encodeURIComponent(message);
+    const phoneNumber = '+51979771933';
+    const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    window.open(whatsappLink, '_blank');
+});

@@ -93,7 +93,9 @@ class Products {
     }
 
     calculateTotal() {
-        return state.totalProducts.reduce((total, product) => total + product.price, 0);
+        return state.totalProducts.reduce(function(total, product) {
+            return total + product.price;
+        }, 0);
     }
 
     updateTotalPrice() {
@@ -123,49 +125,3 @@ function renderStoredProducts() {
 }
 
 renderStoredProducts();
-    // attachCouponEventListeners() {
-    //     const cuponButton = document.getElementById('cupon');
-    //     const couponForm = document.getElementById('couponForm');
-    //     const couponCodeInput = document.getElementById('couponCode');
-
-    //     cuponButton.addEventListener('click', () => {
-    //         cuponButton.style.display = 'none';
-    //         couponForm.style.display = 'block';
-    //     });
-
-    //     couponForm.addEventListener('submit', (event) => {
-    //         event.preventDefault();
-    //         this.applyCoupon(couponCodeInput);
-    //     });
-    // }
-
-    // applyCoupon(couponCodeInput) {
-    //     const couponForm = document.getElementById('couponForm');
-    //     const cuponButton = document.getElementById('cupon');
-    //     const priceDisplay = document.getElementById('total');
-
-    //     if (localStorage.getItem('couponUsed') === 'true') {
-    //         alert('Coupon has already been used.');
-    //         couponForm.style.display = 'none';
-    //         cuponButton.style.display = 'block';
-    //         return;
-    //     }
-
-    //     const couponCode = couponCodeInput.value.trim();
-    //     const discount = 0.20;
-    //     let total = this.calculateTotal();
-
-    //     if (couponCode === 'Ecommerce') {
-    //         const discountAmount = total * discount;
-    //         total -= discountAmount;
-    //         priceDisplay.textContent = `S/${total.toFixed(2)}`;
-    //         localStorage.setItem('couponUsed', 'true');
-    //         alert('Coupon applied successfully.');
-    //     } else {
-    //         alert('Invalid coupon code.');
-    //     }
-
-    //     couponForm.style.display = 'none';
-    //     couponCodeInput.value = '';
-    //     cuponButton.style.display = 'block';
-    // }
