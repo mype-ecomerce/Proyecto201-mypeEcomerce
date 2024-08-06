@@ -1,26 +1,24 @@
-"use strict";
-
+"use strict"; 
 const img = [
-  "casacaAdidas",
-  "casacaAdidasBlanca",
-  "chalinaCuadros",
-  "chalinaMarron",
-  "chaquetaPloma",
-  "chompaEstrella",
-  "chompaRayas",
-  "poleraNegra",
-  "sacoBotones",
+  { name: "casacaAdidas", price: 200 },
+  { name: "casacaAdidasBlanca", price: 220 },
+  { name: "chalinaCuadros", price: 180 },
+  { name: "chalinaMarron", price: 175 },
+  { name: "chaquetaPloma", price: 230 },
+  { name: "chompaEstrella", price: 190 },
+  { name: "chompaRayas", price: 195 },
+  { name: "poleraNegra", price: 210 },
+  { name: "sacoBotones", price: 240 },
 ];
-
 const state = {
   totalProducts: [],
 };
 
 class Products {
-  constructor(name, route) {
+  constructor(name, route, price) {
     this.name = name;
     this.route = route;
-    this.price = 200;
+    this.price = price;
   }
 
   addToLocalStorage() {
@@ -69,7 +67,6 @@ class Products {
 
     return div;
   }
-
   createBuyButton() {
     const button = document.createElement("button");
     button.textContent = "Agregar al carrito";
@@ -80,14 +77,15 @@ class Products {
     return button;
   }
 }
-
 function objMaker() {
-  img.forEach((imageName) => {
-    const product = new Products(imageName, `../img/${imageName}.png`);
-    state.totalProducts.push(product);
-  });
+  for (let i = 0; i < img.length; i++) {
+    const item = img[i];
+    for (let j = 0; j < 1; j++) { // Inner loop is redundant but added as per request
+      const product = new Products(item.name, `../img/${item.name}.png`, item.price);
+      state.totalProducts.push(product);
+    }
+  }
 }
-
 function renderAllProducts() {
   state.totalProducts.forEach((product) => {
     product.renderImg();
