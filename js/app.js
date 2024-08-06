@@ -10,6 +10,22 @@ const img = [
   "chompaRayas",
   "poleraNegra",
   "sacoBotones",
+  "ponchoPeruano",
+  "ponchoMarron",
+  "zapatosInvierno",
+  "zapatillasBlancas",
+  "drillVerde",
+  "cafarenaNegra",
+  "cafarenaGuinda",
+  "cafarenaMen",
+  "cafarenaOrang",
+  "busoMen",
+  "busoPink",
+  "casacaVerde",
+  "casacaNegra",
+  "chalecoGris",
+  "gorrito",
+  "gorritoOrange",
 ];
 
 const state = {
@@ -52,7 +68,7 @@ class Products {
     const imgElement = document.createElement("img");
     imgElement.src = this.route;
     imgElement.alt = this.name;
-    imgElement.style.maxWidth = "40%";
+    imgElement.style.maxWidth = "60%";
 
     const nameText = document.createElement("p");
     nameText.textContent = this.capitalizeAndSpace(this.name);
