@@ -4,8 +4,7 @@ body {
 }
 
 #couponForm {
-  display: flex;
-  justify-content: end;
+  display:none
 }
 h1 {
   font-family: Helvetica, sans-serif;
@@ -57,11 +56,6 @@ h1 {
 }
 
 .cupon-container {
-  display: inline-block;
-  margin: 0;
-}
-
-#couponForm {
   display: inline-block;
   margin: 0;
 }
